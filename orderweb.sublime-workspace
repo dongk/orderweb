@@ -1,0 +1,307 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"htm",
+				"htmlString"
+			],
+			[
+				"from",
+				"fromFile"
+			],
+			[
+				"A",
+				"Application"
+			],
+			[
+				"re",
+				"response"
+			],
+			[
+				"sta",
+				"start"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "protected/views/product/index.php",
+			"settings":
+			{
+				"buffer_size": 405,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "protected/controllers/ProductController.php",
+			"settings":
+			{
+				"buffer_size": 4222,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Library/WebServer/Documents/orderweb/protected/views/layouts/ordermain.php",
+		"/Library/WebServer/Documents/orderweb/protected/views/layouts/main.php",
+		"/Library/WebServer/Documents/blog/protected/config/test.php",
+		"/Library/WebServer/Documents/blog/protected/config/params.php",
+		"/Library/WebServer/Documents/blog/protected/config/console.php",
+		"/Library/WebServer/Documents/blog/protected/config/main.php",
+		"/Library/WebServer/Documents/yii/demos/phonebook/protected/views/site/index.php",
+		"/Library/WebServer/Documents/yii/demos/blog/index.php",
+		"/Library/WebServer/Documents/yii/framework/yii.php",
+		"/Library/WebServer/Documents/index.php",
+		"/Users/dongk/workspace/web-start/app/views/index.scala.html",
+		"/Users/dongk/workspace/web-start/app/controllers/Transform.scala",
+		"/Users/dongk/workspace/web-start/conf/routes",
+		"/Users/dongk/workspace/web-start/app/controllers/Application.scala",
+		"/Users/dongk/workspace/web-start/app/controllers/Transformer.scala",
+		"/Users/dongk/workspace/web-start/app/Transform.scala",
+		"/Users/dongk/workspace/www/ci/application/controllers/blog.php",
+		"/Users/dongk/workspace/www/ci/application/config/routes.php",
+		"/Users/dongk/workspace/www/ci/application/controllers/index.html",
+		"/Users/dongk/workspace/test.py",
+		"/framework/play-2.1.1/samples/scala/computer-database/app/controllers/Application.scala",
+		"/framework/Kal/README.markdown",
+		"/Users/dongk/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/dongk/workspace/todolist/app/views/index.scala.html",
+		"/Users/dongk/workspace/todolist/app/controllers/Application.scala",
+		"/Users/dongk/workspace/todolist/app/models/Task.scala",
+		"/Users/dongk/workspace/todolist/conf/application.conf",
+		"/Users/dongk/workspace/todolist/conf/evolutions/default/1.sql",
+		"/Users/dongk/workspace/todolist/conf/routes",
+		"/Users/dongk/workspace/todolist/app/views/main.scala.html",
+		"/Users/dongk/workspace/todolist/public/stylesheets/main.css",
+		"/Users/dongk/Downloads/subtitles.srt",
+		"/Users/dongk/workspace/startByDongk/index.html",
+		"/framework/eclipse4Scala/workspace/example/build.sbt",
+		"/Users/dongk/workspace/startByDongk/untitled.html",
+		"/Users/dongk/Library/Application Support/Alfred 2/Alfred.alfredpreferences/workflows/user.workflow.9A024BD8-26A0-4B6A-B019-6DBE08E2AB9A/dict.php",
+		"/Users/dongk/Dropbox/Air/introduce",
+		"/Users/dongk/algs4/practice/Hello.java",
+		"/framework/spring-framework-3.2.2.RELEASE/samplecode/spring-petclinic/src/main/java/org/springframework/samples/petclinic/service/ClinicService.java",
+		"/Users/dongk/algs4/practice/untitled",
+		"/framework/eclipse/artifacts.xml",
+		"/Users/dongk/Downloads/9781430245124/09 - Nav/Presidents.plist",
+		"/Users/dongk/Desktop/BIDDeleteMeViewController.m",
+		"/Users/dongk/Downloads/olivida-start-master/tpl/index.html",
+		"/Users/dongk/workspace/avbabi/avbabi20120219.sql",
+		"/Users/dongk/Desktop/BIDDeleteMeViewController.h",
+		"/Users/dongk/Downloads/olivida-start-master/main.py",
+		"/Users/dongk/Downloads/olivida-start-master/index.yaml",
+		"/Users/dongk/workspace/olivida-start-master/main.py",
+		"/Users/dongk/workspace/nodejs/fs/requestHandlers.js",
+		"/Users/dongk/workspace/nodejs/fs/index.js",
+		"/Users/dongk/workspace/nodejs/fs/server.js",
+		"/Users/dongk/workspace/nodejs/fs/router.js",
+		"/Users/dongk/workspace/olivida-start-master/tpl/index.html",
+		"/Users/dongk/workspace/nodejs/fs/requestHandlers",
+		"/framework/node/node.sublime-build",
+		"/Users/dongk/workspace/blog/dongk.github.com/_config.yml",
+		"/framework/apache-tomcat-7.0.34/conf/tomcat-users.xml",
+		"/framework/apache-tomcat-7.0.34/conf/web.xml",
+		"/framework/apache-tomcat-7.0.34/conf/server.xml",
+		"/framework/apache-tomcat-7.0.34/conf/catalina.properties",
+		"/framework/get-pip.py",
+		"/framework/nginx/conf/nginx.conf",
+		"/Users/dongk/Downloads/Flora_Pac-master/flora_pac",
+		"/Users/dongk/Documents/leaning cocos2d/Chapter2/SpaceViking/Classes/BackgroundLayer.m",
+		"/Users/dongk/Downloads/MacVim-snapshot-66/mvim",
+		"/Users/dongk/Downloads/sources.list.precise",
+		"/framework/www/index.html",
+		"/framework/nginx-1.2.6/test.conf",
+		"/Users/dongk/Library/Rime/default.yaml",
+		"/framework/eclipse/links/svn.link",
+		"/framework/eclipse/links/workshop.link"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"date",
+			"message",
+			"m",
+			"    @",
+			">",
+			"dongkssh_queen",
+			"/static/\n",
+			"		\n",
+			"admin"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 1,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "protected/views/product/index.php",
+					"settings":
+					{
+						"buffer_size": 405,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								322,
+								322
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "protected/controllers/ProductController.php",
+					"settings":
+					{
+						"buffer_size": 4222,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								56,
+								56
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 245.0,
+	"status_bar_visible": true
+}

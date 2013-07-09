@@ -1,0 +1,1116 @@
+2013/07/07 14:41:13 [error] [php] date(): It is not safe to rely on the system's timezone settings. You are *required* to use the date.timezone setting or the date_default_timezone_set() function. In case you used any of those methods and you are still getting this warning, you most likely misspelled the timezone identifier. We selected 'Asia/Chongqing' for 'CST/8.0/no DST' instead (/Library/WebServer/Documents/orderweb/protected/views/layouts/main.php:51)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(76): SiteController->renderFile()
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/widgets/CContentDecorator.php(54): CContentDecorator->decorate()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/widgets/COutputProcessor.php(44): CContentDecorator->processOutput()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(206): CContentDecorator->run()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(300): SiteController->endWidget()
+#6 /Library/WebServer/Documents/orderweb/protected/views/layouts/column1.php(6): SiteController->endContent()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): SiteController->renderInternal()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(784): SiteController->renderFile()
+#10 /Library/WebServer/Documents/orderweb/protected/controllers/SiteController.php(32): SiteController->render()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): SiteController->actionIndex()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(286): SiteController->runAction()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): SiteController->runActionWithFilters()
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): SiteController->run()
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/
+in /Library/WebServer/Documents/orderweb/protected/views/layouts/main.php (51)
+in /Library/WebServer/Documents/orderweb/protected/views/layouts/column1.php (6)
+in /Library/WebServer/Documents/orderweb/protected/controllers/SiteController.php (32)
+2013/07/07 15:18:38 [error] [php] PDO::__construct(): [2002] No such file or directory (trying to connect via unix:///var/mysql/mysql.sock) (/framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php:423)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(308): CDbConnection->setActive()
+#2 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(387): CDbConnection->init()
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(103): CWebApplication->getComponent()
+#4 /framework/yii-1.1.13.e9e4a0/framework/gii/generators/model/ModelCode.php(57): CWebApplication->__get()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(153): ModelCode->__construct()
+#7 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(63): ModelGenerator->prepare()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ModelGenerator->runAction()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=gii/model
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 15:18:45 [error] [php] PDO::__construct(): [2002] No such file or directory (trying to connect via unix:///var/mysql/mysql.sock) (/framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php:423)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(308): CDbConnection->setActive()
+#2 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(387): CDbConnection->init()
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(103): CWebApplication->getComponent()
+#4 /framework/yii-1.1.13.e9e4a0/framework/gii/generators/model/ModelCode.php(57): CWebApplication->__get()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(153): ModelCode->__construct()
+#7 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(63): ModelGenerator->prepare()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ModelGenerator->runAction()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=gii/model
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 15:19:16 [error] [php] PDO::__construct(): [2002] No such file or directory (trying to connect via unix:///var/mysql/mysql.sock) (/framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php:423)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(308): CDbConnection->setActive()
+#2 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(387): CDbConnection->init()
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(103): CWebApplication->getComponent()
+#4 /framework/yii-1.1.13.e9e4a0/framework/gii/generators/model/ModelCode.php(57): CWebApplication->__get()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(153): ModelCode->__construct()
+#7 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(63): ModelGenerator->prepare()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ModelGenerator->actionIndex()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(286): ModelGenerator->runAction()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ModelGenerator->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ModelGenerator->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=gii/model
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 15:19:34 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php:381
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(330): CDbConnection->open()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/CDbConnection.php(308): CDbConnection->setActive(true)
+#2 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(387): CDbConnection->init()
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CModule.php(103): CModule->getComponent('db')
+#4 /framework/yii-1.1.13.e9e4a0/framework/gii/generators/model/ModelCode.php(57): CModule->__get('db')
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CFormModel.php(39): ModelCode->init()
+#6 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(153): CFormModel->__construct()
+#7 /framework/yii-1.1.13.e9e4a0/framework/gii/CCodeGenerator.php(63): CCodeGenerator->prepare()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): CCodeGenerator->actionIndex()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(286): CController->runAction(Object(CInlineAction))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('gii/model')
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/orderweb/index.php?r=gii/model
+HTTP_REFERER=http://localhost/orderweb/index.php?r=gii
+---
+2013/07/07 15:37:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prodcut/new".' in /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('prodcut/new')
+#1 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderweb/index.php?r=prodcut/new
+---
+2013/07/07 15:37:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prodcut/".' in /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('prodcut/')
+#1 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderweb/index.php?r=prodcut/
+---
+2013/07/07 15:37:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prodcut".' in /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('prodcut')
+#1 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderweb/index.php?r=prodcut
+---
+2013/07/07 15:38:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "prodcut/index".' in /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('prodcut/index')
+#1 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/orderweb/index.php?r=prodcut/index
+---
+2013/07/07 17:11:33 [error] [php] Use of undefined constant name - assumed 'name' (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:12:18 [error] [php] Object of class Product could not be converted to int (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:13:07 [error] [php] Trying to get property of non-object (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:13:08 [error] [php] Trying to get property of non-object (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:13:47 [error] [php] Trying to get property of non-object (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:15:29 [error] [php] Trying to get property of non-object (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:22:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /framework/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('new')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('new')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/new')
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderweb/index.php?r=product/new
+---
+2013/07/07 17:22:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /framework/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('new')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('new')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/new')
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderweb/index.php?r=product/new
+---
+2013/07/07 17:22:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "new".' in /framework/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('new')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('new')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/new')
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderweb/index.php?r=product/new
+---
+2013/07/07 17:23:51 [error] [php] Object of class Product could not be converted to string (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:24:18 [error] [php] Trying to get property of non-object (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/07 17:24:29 [error] [php] Trying to get property of non-object (/Library/WebServer/Documents/orderweb/protected/views/product/index.php:30)
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): ProductController->renderFile()
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): ProductController->renderPartial()
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(128): ProductController->render()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams()
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): ProductController->runAction()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CAccessControlFilter->filter()
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): ProductController->filterAccessControl()
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): ProductController->runActionWithFilters()
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): ProductController->run()
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController()
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CWebApplication->run()
+REQUEST_URI=/orderweb/index.php?r=product
+in /Library/WebServer/Documents/orderweb/protected/views/product/index.php (30)
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (128)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/08 11:34:33 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(7): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 11:35:09 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(7): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 11:35:18 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(7): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 11:35:21 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(7): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 11:36:16 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(8): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 11:37:39 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(8): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 11:37:53 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(8): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 11:37:54 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(8): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 12:05:50 [error] [exception.CException] exception 'CException' with message 'Property "ProductController.productData" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:130
+Stack trace:
+#0 /Library/WebServer/Documents/orderweb/protected/views/product/index.php(8): CComponent->__get('productData')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(126): require('/Library/WebSer...')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Library/WebSer...', Array, true)
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(869): CBaseController->renderFile('/Library/WebSer...', Array, true)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(782): CController->renderPartial('index', Array, true)
+#5 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(132): CController->render('index', Array)
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionIndex()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#14 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('')
+#16 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product')
+#17 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#18 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/orderweb/index.php?r=product
+---
+2013/07/08 13:11:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getProductAjax".' in /framework/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('getProductAjax')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('getProductAjax')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/getProd...')
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderweb/index.php?r=product/getProductAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:25:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getProductAjax".' in /framework/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('getProductAjax')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('getProductAjax')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/getProd...')
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderweb/index.php?r=product/getProductAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:26:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "getProductAjax".' in /framework/yii-1.1.13.e9e4a0/framework/web/CController.php:483
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(270): CController->missingAction('getProductAjax')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('getProductAjax')
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/getProd...')
+#3 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#4 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/orderweb/index.php?r=product/getProductAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:27:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:27:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:28:24 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:28:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:28:45 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:29:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:29:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:29:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:31:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:32:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:39:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:40:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:40:50 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax&category=2
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:41:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax&category=3
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:41:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax&category=2
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:43:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax&category=2
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 13:43:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php:179
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/web/auth/CAccessControlFilter.php(142): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('productAjax')
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/product...')
+#9 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#10 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/orderweb/index.php?r=product/productAjax
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/08 20:54:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'orderweb.order_product' doesn't exist. The SQL statement executed was: SHOW FULL COLUMNS FROM `order_product`.
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/09 13:17:32 [error] [exception.CException] exception 'CException' with message 'Property "Order.price" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(159): CComponent->__set('price', NULL)
+#1 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(165): CActiveRecord->__set('price', NULL)
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#13 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:18:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1373347137' for column 'create_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`price`, `create_time`, `finish_time`, `amount`, `seq`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (170)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/09 13:18:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1373347137' for column 'create_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`price`, `create_time`, `finish_time`, `amount`, `seq`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in /framework/yii-1.1.13.e9e4a0/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(170): CActiveRecord->save()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:41:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1373348476' for column 'create_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `create_time`) VALUES (:yp0, :yp1).
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (166)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/09 13:41:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1373348476' for column 'create_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `create_time`) VALUES (:yp0, :yp1)' in /framework/yii-1.1.13.e9e4a0/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(166): CActiveRecord->save()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:43:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'create_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `create_time`) VALUES (:yp0, :yp1).
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (166)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/09 13:43:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '' for column 'create_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `create_time`) VALUES (:yp0, :yp1)' in /framework/yii-1.1.13.e9e4a0/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(166): CActiveRecord->save()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:45:19 [error] [exception.CException] exception 'CException' with message 'Property "Order.finishtime" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(159): CComponent->__set('finishtime', 1373348719)
+#1 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(165): CActiveRecord->__set('finishtime', 1373348719)
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#13 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:47:12 [error] [exception.CException] exception 'CException' with message 'Property "Order.finishtime" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(159): CComponent->__set('finishtime', 1373348832)
+#1 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(165): CActiveRecord->__set('finishtime', 1373348832)
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#13 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:48:09 [error] [exception.CException] exception 'CException' with message 'Property "Order.finishtime" is not defined.' in /framework/yii-1.1.13.e9e4a0/framework/base/CComponent.php:173
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(159): CComponent->__set('finishtime', 1373348889)
+#1 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(165): CActiveRecord->__set('finishtime', 1373348889)
+#2 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#13 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#14 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:49:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1373348963' for column 'finish_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `finish_time`) VALUES (:yp0, :yp1).
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (166)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/09 13:49:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1373348963' for column 'finish_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `finish_time`) VALUES (:yp0, :yp1)' in /framework/yii-1.1.13.e9e4a0/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(166): CActiveRecord->save()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
+2013/07/09 13:50:06 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect time value: '1373349006' for column 'finish_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `finish_time`) VALUES (:yp0, :yp1).
+in /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php (166)
+in /Library/WebServer/Documents/orderweb/index.php (13)
+2013/07/09 13:50:06 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect time value: '1373349006' for column 'finish_time' at row 1. The SQL statement executed was: INSERT INTO `order` (`id`, `finish_time`) VALUES (:yp0, :yp1)' in /framework/yii-1.1.13.e9e4a0/framework/db/CDbCommand.php:357
+Stack trace:
+#0 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(1023): CDbCommand->execute()
+#1 /framework/yii-1.1.13.e9e4a0/framework/db/ar/CActiveRecord.php(795): CActiveRecord->insert(NULL)
+#2 /Library/WebServer/Documents/orderweb/protected/controllers/ProductController.php(166): CActiveRecord->save()
+#3 /framework/yii-1.1.13.e9e4a0/framework/web/actions/CInlineAction.php(49): ProductController->actionCreateOrder()
+#4 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#5 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#6 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#7 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#8 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#9 /framework/yii-1.1.13.e9e4a0/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#10 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(291): CFilterChain->run()
+#11 /framework/yii-1.1.13.e9e4a0/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(282): CController->run('createOrder')
+#13 /framework/yii-1.1.13.e9e4a0/framework/web/CWebApplication.php(141): CWebApplication->runController('product/createO...')
+#14 /framework/yii-1.1.13.e9e4a0/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#15 /Library/WebServer/Documents/orderweb/index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/orderweb/index.php?r=product/createOrder
+HTTP_REFERER=http://localhost/orderweb/index.php?r=product
+---
