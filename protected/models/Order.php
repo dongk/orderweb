@@ -9,6 +9,8 @@
  * @property string $finish_time
  * @property double $price
  * @property integer $amount
+ * @property integer $isfinish
+ * @property string $create_time
  */
 class Order extends CActiveRecord
 {
@@ -39,12 +41,13 @@ class Order extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('id', 'required'),
-			array('amount', 'numerical', 'integerOnly'=>true),
+			array('amount, isfinish', 'numerical', 'integerOnly'=>true),
 			array('price', 'numerical'),
-			array('id, finish_time', 'length', 'max'=>20),
+			array('id', 'length', 'max'=>20),
+			array('finish_time, create_time', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id, seq, finish_time, price, amount', 'safe', 'on'=>'search'),
+			array('id, seq, finish_time, price, amount, isfinish, create_time', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,6 +73,8 @@ class Order extends CActiveRecord
 			'finish_time' => 'Finish Time',
 			'price' => 'Price',
 			'amount' => 'Amount',
+			'isfinish' => 'Isfinish',
+			'create_time' => 'Create Time',
 		);
 	}
 
@@ -89,6 +94,8 @@ class Order extends CActiveRecord
 		$criteria->compare('finish_time',$this->finish_time,true);
 		$criteria->compare('price',$this->price);
 		$criteria->compare('amount',$this->amount);
+		$criteria->compare('isfinish',$this->isfinish);
+		$criteria->compare('create_time',$this->create_time,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

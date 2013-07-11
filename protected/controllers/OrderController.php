@@ -1,12 +1,12 @@
 <?php
 
-class ProductController extends Controller
+class OrderController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
-	public $layout='//layouts/ordercontent';
+	public $layout='//layouts/column1';
 
 	/**
 	 * @return array action filters
@@ -28,7 +28,7 @@ class ProductController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','productAjax','createOrder','view'),
+				'actions'=>array('index','view','finish','ajaxOrder'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -62,14 +62,14 @@ class ProductController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Product;
+		$model=new Order;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Product']))
+		if(isset($_POST['Order']))
 		{
-			$model->attributes=$_POST['Product'];
+			$model->attributes=$_POST['Order'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -91,9 +91,9 @@ class ProductController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Product']))
+		if(isset($_POST['Order']))
 		{
-			$model->attributes=$_POST['Product'];
+			$model->attributes=$_POST['Order'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -122,54 +122,49 @@ class ProductController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$categoryData = new CActiveDataProvider('Category');
-
+		
 		$this->render('index',array(
-			'categoryData'=>$categoryData,
-
 		));
 	}
 
 	/**
-	 * Performs the AJAX validation.
+	 * 
 	 */
-	public function actionProductAjax()
+	public function actionAjaxOrder()
 	{
-		$category = $_POST['category'];
-		$condition = "1=1";
-		if($category!='all'){
-			$condition = 'category_id=:cate';
+		$data = Yii::app()->db->createCommand()
+				->select('o.id orderid,o.seq orderseq,o.create_time createtime,o.price orderprice,o.amount orderamount,
+					p.id productid,p.name productname,op.amount productamount ')
+				->from('order o,product p,order_product op')
+				->where('op.order_id=o.id and op.product_id=p.id and o.isfinish=0 ')
+				->order('o.id')
+				->queryAll();
+		$orders = array();
+		foreach ($data as $item) {
+			if(array_key_exists($item['orderid'],$orders)){
+				array_push($orders[$item['orderid']]['products'],
+					array('productid'=>$item['productid'],
+						'productname'=>$item['productname'],'productamount'=>$item['productamount']));
+			}else{
+				$orders[$item['orderid']] = array('orderid'=>$item['orderid'],'orderseq'=>$item['orderseq'],'createtime'=>$item['createtime'],
+															'orderprice'=>$item['orderprice'],'orderamount'=>$item['orderamount'],
+																'products'=>array(array('productid'=>$item['productid'],'productname'=>$item['productname'],'productamount'=>$item['productamount']))
+															);
+			}
 		}
-		$rs=Product::model()->findAll($condition,array(':cate'=>$category));		
-
 		header('Content-Type: application/json; charset="UTF-8"');
-    	echo CJSON::encode($rs);
+    	echo CJSON::encode($orders);
 	}
-	/**
-	 * Performs the AJAX validation.
-	 */
-	public function actionCreateOrder()
-	{
-		    $orderStr = $_POST['order'];
-		    $amount=0;
-		    $order=new Order;
-			$order->id=time();
-			$order->create_time=date("Y-m-d H:i:s");		
 
-		    foreach($orderStr as $item){
-		    	$orderProduct = new OrderProduct;
-		    	$orderProduct->id=time();
-		    	$orderProduct->order_id=$order->id;
-		    	$orderProduct->product_id=$item['id'];
-		    	$orderProduct->amount=$item['count'];
-		    	$orderProduct->save();
-		    	$amount = $amount+$item['count'];
-		    }
-		    $order->amount=$amount;
-		    $order->save();
-			$order=Order::model()->findByPk($order->id);
-		    header('Content-Type: application/text; charset="UTF-8"');
-    		echo $order->seq;
+	public function actionFinish()
+	{
+		$id = $_POST['orderid'];
+		$model=Order::model()->findByPk($id);
+		$model->isfinish=1;
+		$model->finish_time=date("Y-m-d H:i:s");
+		$model->save();
+		header('Content-Type: application/text; charset="UTF-8"');
+    	echo $id;
 	}
 
 	/**
@@ -177,10 +172,10 @@ class ProductController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Product('search');
+		$model=new Order('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Product']))
-			$model->attributes=$_GET['Product'];
+		if(isset($_GET['Order']))
+			$model->attributes=$_GET['Order'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -191,12 +186,12 @@ class ProductController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Product the loaded model
+	 * @return Order the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Product::model()->findByPk($id);
+		$model=Order::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -204,11 +199,11 @@ class ProductController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Product $model the model to be validated
+	 * @param Order $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='product-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='order-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

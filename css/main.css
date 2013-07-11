@@ -135,6 +135,11 @@ div.view
 	border: 1px solid #C9E0ED;
 }
 
+.view
+{
+	border: 1px solid #C9E0ED;
+}
+
 div.breadcrumbs
 {
 	font-size: 0.9em;
@@ -227,4 +232,11 @@ div.search-form
 {
 	background: #80CFFF;
 }
+
+
+.linka:link {color:#000;}		/* 未被访问的链接 */
+.linka:visited {color:#000;}	/* 已被访问的链接 */
+.linka:hover {color:#FF00FF;}	/* 鼠标指针移动到链接上 */
+.linka:active {color:#0000FF;}
+
 
