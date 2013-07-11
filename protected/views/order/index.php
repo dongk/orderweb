@@ -90,12 +90,7 @@ var getOrder = function(lastQueryTime){
         type: "POST",
         data: {'isfinish': '0'},  
         error: function(xhr,tStatus,e){
-            if(!xhr){
-                alert(" We have an error ");
-                alert(tStatus+"   "+e.message);
-            }else{
-                alert("else: "+e.message); 
-            }
+            
             },
         success: function(resp){
             buildOrder(resp);
@@ -122,7 +117,6 @@ var buildOrder = function(data){
 				}else{
 					style = "background: url(<?php echo Yii::app()->request->baseUrl; ?>/images/tabletree-dots.gif) 18px 54% no-repeat;padding-left: 26px;";
 				}
-				console.debug(data[item].products[p]);
 				_outText +=("<tr class='"+item+"'>");
 					_outText +=("<th width=\"20%\" style=\""+style+"\" >");
 						_outText +=(data[item].products[p].productname);
@@ -148,7 +142,6 @@ var setFinish = function(orderid){
         type: "POST",
         data: {'orderid': orderid},  
         error: function(xhr,tStatus,e){
-        	alert(e);
             },
         success: function(resp){
             $('.'+orderid).remove();
