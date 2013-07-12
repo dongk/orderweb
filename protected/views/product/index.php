@@ -6,7 +6,7 @@
 <table width="100%">
 	<tr>
 		<td></td>
-		<td width="90%" height="48px" 
+		<td width="100%" height="48px" 
 			style="vertical-align:top;background:url(<?php echo Yii::app()->request->baseUrl; ?>/images/menu_bg.png) repeat-x;color: #FFF;font-size:1.3em;">
 			<table height="21px">
 				<tr>
